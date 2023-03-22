@@ -42,15 +42,5 @@ Summary - Predicting Calorie_Burnage with Average_Pulse
 number “0”, which means that the true value for the coefficient of Average_Pulse could be zero,
 i.e. non-significant in predicting Calorie_Burnage.
 '''
-<<<<<<< HEAD
-#A new line in our file!
 
-#this is an emergency-fix
-=======
-
-'''
-experimenting new-design branch
-'''
-
->>>>>>> new-design
 
