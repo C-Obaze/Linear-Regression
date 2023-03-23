@@ -9,6 +9,7 @@ health_data = pd.read_csv("Training_session.csv")
 x = health_data['Average_Pulse']
 y = health_data['Calorie_Burnage']
 
+
 # Calculate a linear least-squares regression for two sets of measurements
 result = stats.linregress(x, y)
 
@@ -25,7 +26,6 @@ plt.ylim(ymin=0, ymax=2000)
 plt.xlim(xmin=0, xmax=200)
 plt.xlabel('Average_Pulse')
 plt.ylabel('Calorie_Burnage')
-
 
 model = smf.ols('Calorie_Burnage ~ Average_Pulse', health_data)
 results = model.fit()
