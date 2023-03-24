@@ -9,7 +9,11 @@ health_data = pd.read_csv("Training_session.csv")
 x = health_data['Average_Pulse']
 y = health_data['Calorie_Burnage']
 
+<<<<<<< HEAD
 
+=======
+corr_health_data = round(health_data.corr(),2) 
+>>>>>>> correlation-matrix
 # Calculate a linear least-squares regression for two sets of measurements
 result = stats.linregress(x, y)
 
@@ -29,5 +33,5 @@ plt.ylabel('Calorie_Burnage')
 
 model = smf.ols('Calorie_Burnage ~ Average_Pulse', health_data)
 results = model.fit()
-print(results.summary())
+print(corr_health_data, results.summary())
 plt.show()
